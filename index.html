@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú Noir Bistró</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Noir Bistró</div>
+      <div class="menu-icon" id="menu-icon">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#carnes">Carnes</a></li>
+        <li><a href="#bebidas">Bebidas</a></li>
+        <li><a href="#postres">Postres</a></li>
+        <li><a href="#pastas">Pastas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Secciones del Menú -->
+  <main>
+    <section id="carnes" class="menu-section">
+      <h2>Carnes</h2>
+      <div class="menu-container">
+        <div class="menu-item" data-modal="modal2">
+          <img src="assets/Carnes/filetMignon.jpeg" alt="Plato de carne">
+          <h3>Filete Mignon</h3>
+          <p>Filete jugoso con salsa de vino tinto y puré.</p>
+          <div class="price">$45.00</div>
+          <button class="details-btn" data-modal="modal2">Ver Detalles</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="bebidas" class="menu-section">
+      <h2>Bebidas</h2>
+      <div class="menu-container">
+        <div class="menu-item" data-modal="modal6">
+          <img src="assets/Vinos/VinoTinto.jpeg" alt="Vino gourmet">
+          <h3>Vino Tinto Reserva</h3>
+          <p>Un exquisito vino reserva, perfecto para acompañar carnes.</p>
+          <div class="price">$50.00</div>
+          <button class="details-btn" data-modal="modal6">Ver Detalles</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="postres" class="menu-section">
+      <h2>Postres</h2>
+      <div class="menu-container">
+        <div class="menu-item" data-modal="modal3">
+          <img src="assets/postres/FondantChocolate.jpeg" alt="Postre gourmet">
+          <h3>Fondant de Chocolate</h3>
+          <p>Fondant con corazón líquido y helado de vainilla.</p>
+          <div class="price">$18.00</div>
+          <button class="details-btn" data-modal="modal3">Ver Detalles</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="pastas" class="menu-section">
+      <h2>Pastas</h2>
+      <div class="menu-container">
+        <div class="menu-item" data-modal="modal4">
+          <img src="assets/pastas/Carbonara.jpeg" alt="Pasta gourmet">
+          <h3>Pasta Carbonara</h3>
+          <p>Clásica pasta italiana con salsa cremosa de tocino.</p>
+          <div class="price">$28.00</div>
+          <button class="details-btn" data-modal="modal4">Ver Detalles</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modales -->
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <span class="close" data-modal="modal2">&times;</span>
+      <h2>Filete Mignon</h2>
+      <p>Carne de res cocinada a la perfección, acompañada de salsa de vino tinto y puré rústico.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal6">
+    <div class="modal-content">
+      <span class="close" data-modal="modal6">&times;</span>
+      <h2>Vino Tinto Reserva</h2>
+      <p>Un vino reserva cuidadosamente seleccionado, con notas profundas de frutas oscuras y taninos refinados. Perfecto para acompañar carnes rojas.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <span class="close" data-modal="modal3">&times;</span>
+      <h2>Fondant de Chocolate</h2>
+      <p>Postre irresistible, con un centro de chocolate líquido que se derrite al primer corte, servido con helado de vainilla.</p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal4">
+    <div class="modal-content">
+      <span class="close" data-modal="modal4">&times;</span>
+      <h2>Pasta Carbonara</h2>
+      <p>Una deliciosa pasta al dente con una salsa suave hecha a base de yema de huevo, queso parmesano y tocino crujiente.</p>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
